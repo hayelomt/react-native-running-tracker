@@ -8,4 +8,8 @@ export default {
     trackListScreen: 'TrackList',
     trackListStackScreen: 'TrackListStack',
   },
+  storageKeys: {
+    token: 'token',
+    userName: 'userName',
+  },
 };

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --ext 'js' --exec 'clear && node server.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tunnel": "ngrok http 4000"
   },
   "keywords": [],
   "author": "",
@@ -20,7 +20,8 @@
     "express-validator": "^6.13.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.7",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "ngrok": "^4.2.2"
   },
   "devDependencies": {
     "eslint": "^7.32.0",

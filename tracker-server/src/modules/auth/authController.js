@@ -9,7 +9,7 @@ module.exports = {
   async login(req, res) {
     const user = await authService.login(req.body);
     if (!user) {
-      return res.status(401).json({ message: 'Invalid credentials' });
+      return res.status(400).json({ errors: { email: 'Invalid credentials' } });
     }
 
     res.json(user);

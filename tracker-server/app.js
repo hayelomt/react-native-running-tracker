@@ -19,6 +19,9 @@ module.exports = async () => {
     app.use(cookieParser());
     app.use(morgan('dev'));
 
+    app.get('/', (req, res) => {
+      res.json({ msg: 'hello' });
+    });
     app.use('/api/v1/imgs', express.static(`${__dirname}/imgs`));
     app.use('/api/v1', apiRoutes);
   } catch (err) {

@@ -5,7 +5,9 @@ import AuthStackNav from '../features/auth/nav/AuthStackNav';
 import { AuthContext } from '../features/auth/AuthContext';
 
 const AppNavigation = () => {
-  const { isSignedIn } = useContext(AuthContext);
+  const {
+    state: { isSignedIn },
+  } = useContext(AuthContext);
 
   return (
     <NavigationContainer>
